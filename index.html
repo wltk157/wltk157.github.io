@@ -1,63 +1,8 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>My Portfolio</title>
-  <meta name="description" content="Jannik Richter, jannik811@gmail.com
-">
-
-  <link rel="stylesheet" href="/jekyll-slender-template/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/jekyll-slender-template/">
-  <link rel="alternate" type="application/rss+xml" title="My Portfolio" href="http://localhost:4000/jekyll-slender-template/feed.xml">
-</head>
-
-
-  <body>
-
-    <header class="site-header margin-bot-big">
-
-  <div class="wrapper">
-
-    <div class="title">
-        <a class="site-title" href="/jekyll-slender-template/">My Portfolio</a>
-    </div>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-        
-          
-          <a class="page-link" href="/jekyll-slender-template/about/">About</a>
-          
-        
-          
-        
-          
-        
-          
-        
-      </div>
-    </nav>
-
-  </div>
-
-</header>
-    
-
-    <div class="page-content margin-bot-big">
-      <div class="wrapper">        
-        <div class="home">
+<div class="home">
   
   
  <div class="col col-12">
@@ -75,159 +20,42 @@
       </div>  
   </div>
   <div class="col col-12">
-    
-      <div class="col col-8">
-        <div class="block" style="background-image:url(assets/1.jpg)">
-            <div class="block-body height-2">              
+    {% for port in site.data.portfolio %}
+      <div class="col col-{{port.width}}">
+        <div class="block" style="background-image:url(assets/{{port.img}})">
+            <div class="block-body height-{{port.height}}">              
                 <h2 class="align-bottom-right">
-                  My Project
+                  {{ port.title }}
                 </h2>
             </div>
         </div>
       </div>
-    
-      <div class="col col-4">
-        <div class="block" style="background-image:url(assets/2.jpg)">
-            <div class="block-body height-2">              
-                <h2 class="align-bottom-right">
-                  Some other project I did
-                </h2>
-            </div>
-        </div>
-      </div>
-    
+    {% endfor %}
     </div>
   <div class="col col-9">
-    
-      <div class="col col-3">
-        <div class="block blue">
-            <div class="block-body height-1">
-                <span class="post-meta white-text">Mar 30, 2016</span>
+    {% for post in site.posts %}
+      <div class="col col-{{post.width}}">
+        <div class="block {{post.color}}">
+            <div class="block-body height-{{post.height}}">
+                <span class="post-meta white-text">{{ post.date | date: "%b %-d, %Y" }}</span>
 
                 <h2>
-                  <a class="post-link white-text" href="/jekyll-slender-template/jekyll/update/2016/03/30/welcome-to-jekyll.html">Welcome to Jekyll!</a>
+                  <a class="post-link white-text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h2>
             </div>
         </div>
       </div>
-    
-      <div class="col col-6">
-        <div class="block teal">
-            <div class="block-body height-1">
-                <span class="post-meta white-text">Mar 30, 2016</span>
-
-                <h2>
-                  <a class="post-link white-text" href="/jekyll-slender-template/jekyll/update/2016/03/30/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-                </h2>
-            </div>
-        </div>
-      </div>
-    
-      <div class="col col-3">
-        <div class="block blue">
-            <div class="block-body height-1">
-                <span class="post-meta white-text">Mar 30, 2016</span>
-
-                <h2>
-                  <a class="post-link white-text" href="/jekyll-slender-template/jekyll/update/2016/03/30/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-                </h2>
-            </div>
-        </div>
-      </div>
-    
-      <div class="col col-3">
-        <div class="block red">
-            <div class="block-body height-1">
-                <span class="post-meta white-text">Mar 30, 2016</span>
-
-                <h2>
-                  <a class="post-link white-text" href="/jekyll-slender-template/jekyll/update/2016/03/30/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-                </h2>
-            </div>
-        </div>
-      </div>
-    
-      <div class="col col-3">
-        <div class="block red">
-            <div class="block-body height-1">
-                <span class="post-meta white-text">Mar 30, 2016</span>
-
-                <h2>
-                  <a class="post-link white-text" href="/jekyll-slender-template/jekyll/update/2016/03/30/welcome-to-jekyll-Copy.html">Welcome to Jekyll!</a>
-                </h2>
-            </div>
-        </div>
-      </div>
-    
-      <div class="col col-6">
-        <div class="block teal">
-            <div class="block-body height-1">
-                <span class="post-meta white-text">Mar 30, 2016</span>
-
-                <h2>
-                  <a class="post-link white-text" href="/jekyll-slender-template/jekyll/update/2016/03/30/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-                </h2>
-            </div>
-        </div>
-      </div>
-    
+    {% endfor %}
     </div>
     <div class="col col-3">
         <div class="block glass">
             <div class="block-body">
                 <h3 class="margin-bot">Skills</h3>                
-                
-                <span class="post-meta white-text">javascript</span>
-                <div class="progress margin-bot"><div class="progress-6"></div></div>                
-                
-                <span class="post-meta white-text">css</span>
-                <div class="progress margin-bot"><div class="progress-7"></div></div>                
-                
-                <span class="post-meta white-text">c#</span>
-                <div class="progress margin-bot"><div class="progress-3"></div></div>                
-                
-                <span class="post-meta white-text">angularjs</span>
-                <div class="progress margin-bot"><div class="progress-8"></div></div>                
-                
-                <span class="post-meta white-text">java</span>
-                <div class="progress margin-bot"><div class="progress-5"></div></div>                
-                
-                <span class="post-meta white-text">sass</span>
-                <div class="progress margin-bot"><div class="progress-4"></div></div>                
-                
-                <span class="post-meta white-text">jquery</span>
-                <div class="progress margin-bot"><div class="progress-3"></div></div>                
-                
-                <span class="post-meta white-text">node.js</span>
-                <div class="progress margin-bot"><div class="progress-2"></div></div>                
-                
-                <span class="post-meta white-text">php</span>
-                <div class="progress margin-bot"><div class="progress-4"></div></div>                
-                
+                {% for skill in site.data.skills %}
+                <span class="post-meta white-text">{{skill.descr}}</span>
+                <div class="progress margin-bot"><div class="progress-{{skill.xp}}"></div></div>                
+                {% endfor %}
             </div>
         </div>
     </div>
 </div>
-
-      </div>
-    </div>
-
-    <footer class="site-footer">
-
-  <div class="wrapper">
-  
-    <div class="col-wrapper">     
-     
-        <p>Jannik Richter, jannik811@gmail.com
-</p>
-     
-    </div>
-
-  </div>
-
-</footer>
-
-
-  </body>
-
-</html>
