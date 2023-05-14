@@ -6,14 +6,14 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: My Portfolio
-email: your-email@domain.com
+title: wltk157
+email: wltk157@vip.qq.com
 description: > # this means to ignore newlines until "baseurl:"
   Jannik Richter, jannik811@gmail.com
-baseurl: "/jekyll-slender-template" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://wltk157.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: wltk158
+github_username:  wltk157
 
 # Build settings
 markdown: kramdown
