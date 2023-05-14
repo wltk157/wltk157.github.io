@@ -1,7 +1,8 @@
 -   id: C
-    descr: The C Programming language
+    descr: C
     xp: 8
--   id: css
-    descr: css
+-   id: Python
+    descr: Python
     color: teal
     xp: 7
+
