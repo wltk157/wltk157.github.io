@@ -9,6 +9,10 @@
     descr: Deep Learning
     color: teal
     xp: 5
+-   id: Java
+    descr: Java
+    color: teal
+    xp: 4
 -   id: ML
     descr: Machine Learning
     color: teal
