@@ -1,8 +1,15 @@
 -   id: C
     descr: C
-    xp: 8
+    xp: 9
 -   id: Python
     descr: Python
     color: teal
-    xp: 7
-
+    xp: 8
+-   id: DL
+    descr: Deep Learning
+    color: teal
+    xp: 5
+-   id: ML
+    descr: Machine Learning
+    color: teal
+    xp: 2
