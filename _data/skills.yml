@@ -8,7 +8,7 @@
 -   id: DL
     descr: Deep Learning
     color: teal
-    xp: 5
+    xp: 6
 -   id: Java
     descr: Java
     color: teal
@@ -16,4 +16,8 @@
 -   id: ML
     descr: Machine Learning
     color: teal
-    xp: 2
+    xp: 1
+-   id: FrontSize
+    descr: 前端三件套
+    color: teal
+    xp: 0

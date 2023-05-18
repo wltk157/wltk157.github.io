@@ -7,14 +7,14 @@ layout: default
   
  <div class="col col-12">
       <div class="col col-3">
-          <div class="block glass"  style="background-image:url(assets/avatar.png)">      
+          <div class="block glass"  style="background-image:url(assets/avatar.png); background-size: cover;" >      
           </div>
       </div>
       <div class="col col-9">
         <div class="block glass">
             <div class="block-body">
-                <h2>少年Wiki</h2>
-                <p class="grey-text">慢慢成长，慢慢成熟。
+                <h2>WLTK157</h2>
+                <p class="grey-text">向前看，别回头。
 
                 </p>
             </div>
@@ -24,7 +24,7 @@ layout: default
   <div class="col col-12">
     {% for port in site.data.portfolio %}
       <div class="col col-{{port.width}}">
-        <div class="block" style="background-image:url(assets/{{port.img}})">
+        <div class="block" style="background-image:url(assets/{{port.img}}); background-size: cover;">
             <div class="block-body height-{{port.height}}">              
                 <h2 class="align-bottom-right">
                   {{ port.title }}

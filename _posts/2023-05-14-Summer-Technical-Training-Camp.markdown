@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Planning of the Summer Technical Traning Camp"
+title:  "暑假学点啥"
 color:  grey
 width:   5
 height:  1

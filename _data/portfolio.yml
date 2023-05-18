@@ -4,7 +4,12 @@
     width: 3
     height: 2
 -   id: 2
-    title: Some other project I did 
-    img: 2.jpg
+    title: Wiki
+    img: wiki.png
     width: 4
+    height: 2
+-   id: 2
+    title:  
+    img: hometown.png
+    width: 5
     height: 2

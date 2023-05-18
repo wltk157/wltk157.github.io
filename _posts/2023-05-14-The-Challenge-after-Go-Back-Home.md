@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Challenges after Go Back Home"
+title:  "大学生放假回家后面临的挑战"
 color:  purple
 width:   4
 height:  1
