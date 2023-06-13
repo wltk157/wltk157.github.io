@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "帅哥，要不要学点前端三件套"
+title:  "前端三剑客"
 color:  green
 width:   3
 height:  1

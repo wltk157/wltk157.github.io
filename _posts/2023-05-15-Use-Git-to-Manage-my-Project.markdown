@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "请用Git管理项目"
+title:  "用Git管理项目"
 color:  grey
 width:   3
 height:  1
